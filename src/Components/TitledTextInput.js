@@ -5,7 +5,7 @@ const Input = styled.input`
     border-radius: 24px;
     border: solid #E2E8F0 1px;
     background-color: #F8FAFC;
-    color: #666787;
+    color: #0F172A;
     &:hover {
         opacity: 0.8;
     }

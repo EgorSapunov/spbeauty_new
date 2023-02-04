@@ -4,7 +4,8 @@ import IconOnlyButton from '../../../../Components/IconOnlyButton';
 
 const WrapperInput = styled.div`
     position:relative;
-    width: 216px;
+    width: 217px;
+    height: 34px;
 `;
 
 const Input = styled.input`
@@ -22,21 +23,24 @@ const Input = styled.input`
     }
 `;
 
-const SearchIconWrapper = styled.div`
+const SearchIconImput = styled.div`
     position: absolute;
     box-sizing:border-box;
-    right: 16px;  /* Здесь можно добавить отступ от правого края, чтобы сдвинуть иконку левее */
+    right: 0px;  /* Здесь можно добавить отступ от правого края, чтобы сдвинуть иконку левее */
     top:50%;
     transform: translateY(-50%);
+    &:hover {
+        opacity: 0.8;
+    }
 `;
 
 function SearchField() {
     return (
         <WrapperInput className='d-inline-flex'>  {/* Устанавливает ширину поля и включает относительное положение */}
-            <Input className='p-2' placeholder='Найти на странице...'/>
-            <SearchIconWrapper className='p-2'>  {/* Устанавливает абсолютное положение внутри поля ввода */}
+            <Input className='ps-3'placeholder='Найти'/>
+            <SearchIconImput className='pe-3'>  {/* Устанавливает абсолютное положение внутри поля ввода */}
                 <IconOnlyButton icon={<SearchIcon/>}/>
-            </SearchIconWrapper>
+            </SearchIconImput>
         </WrapperInput>
     );
 }

@@ -10,7 +10,7 @@ const Select = styled.select`
     border-radius: 24px;
     border: solid #E2E8F0 1px;
     background-color: #F8FAFC;
-    color: #666787;
+    color: #0F172A;
     &:hover {
         opacity: 0.8;
     }
@@ -18,7 +18,7 @@ const Select = styled.select`
 
 function TitledSelector({title, options}) {
     const Title = title === undefined ? 
-        (<div></div>) : 
+        (<div></div>) :
         (<div>{title}</div>);
     return (
         <div className='d-flex flex-column gap-2'>
