@@ -14,7 +14,9 @@ const Input = styled.input`
 function TitledTextInput({title, def}) {
     const Title = title === undefined ? 
         (<div></div>) : 
-        (<div>{title}</div>);
+        (<div class='text-caption-rg'>
+            {title}
+        </div>);
     return (
         <div className='d-flex flex-column gap-2'>
             {Title}
